@@ -1,0 +1,142 @@
+/* .list-table-format {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr 0.5fr;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 15px;
+  border: 1px solid #cacaca;
+  font-size: 13px;
+}
+.list-table-format.title {
+  background-color: #f9f9f9;
+}
+.list-table-format img {
+  width: 70px;
+  border-radius: 3px;
+  transition: 0.3s ease-in-out;
+}
+.list-table-format img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.cursor {
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .list-table-format {
+    grid-template-columns: 1fr 3fr 1fr;
+  }
+  .list-table-format.title {
+    display: none;
+  }
+} */
+
+/* General Styling */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.list {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.list p {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.food-list-heading {
+  background-color: tomato;
+  border-radius: 20px;
+  display: inline-block;
+  padding: 10px 0px;
+  text-align: center;
+}
+
+/* Table Styling */
+.list-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.list-table-format {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr 0.5fr;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+  border-bottom: 1px solid #e0e0e0;
+  transition: background-color 0.2s ease;
+}
+
+.list-table-format.title {
+  background-color: #f9f9f9;
+  font-weight: bold;
+  text-align: center;
+  font-size: 14px;
+}
+
+.list-table-format img {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.list-table-format img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.list-table-format p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.list-table-format p:last-child {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.list-table-format:hover {
+  background-color: #fafafa;
+}
+
+.cursor {
+  cursor: pointer;
+  color: #e74c3c;
+  font-size: 16px;
+  transition: color 0.2s ease;
+}
+
+.cursor:hover {
+  color: #c0392b;
+}
+
+/* Mobile View */
+@media (max-width: 600px) {
+  .list-table-format {
+    grid-template-columns: 1fr 3fr 1fr;
+  }
+
+  .list-table-format.title {
+    display: none;
+  }
+
+  .list-table-format img {
+    width: 50px;
+    height: 50px;
+  }
+}
